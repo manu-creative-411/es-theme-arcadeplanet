@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <include>./default.xml</include>
+  <view name="system,menu,screen,basic,detailed,video,gamecarousel,grid">
+    <helpsystem name="help">
+      <iconColor>${baseColor}</iconColor>
+
+      <iconA>./icons/buttons_east.svg</iconA>
+      <iconB>./icons/buttons_south.svg</iconB>
+      <iconX>./icons/buttons_north.svg</iconX>
+      <iconY>./icons/buttons_west.svg</iconY>
+
+      <!-- XBox layout
+      <iconA>./icons/buttons_south.svg</iconA>
+      <iconB>./icons/buttons_east.svg</iconB>
+      <iconX>./icons/buttons_west.svg</iconX>
+      <iconY>./icons/buttons_north.svg</iconY> -->
+    </helpsystem>
+  </view>
+</theme>

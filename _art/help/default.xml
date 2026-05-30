@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system,menu,screen,basic,detailed,video,gamecarousel,grid">
+		<helpsystem name="help">
+			<size>1 0.01</size>
+			<fontPath>./_art/fonts/Cabin_Condensed-Regular.ttf</fontPath>
+			<pos>0.015 0.9825</pos>
+			<origin>0 0.5</origin>
+			<textColor>C8C8C8bb</textColor>
+			<fontSize>0.023</fontSize>
+		</helpsystem>
+	</view>
+</theme>

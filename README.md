@@ -6,7 +6,7 @@
  
  Features :
  - 3 System Views (Vertical, Horizontal and Horizontal Simplified)
- - 13 Gamelist Views (using a lot logo art and box art)
+ - 14 Gamelist Views (using a lot logo art and box art)
  - 37 custom collections themed
  - Regional Logos and Artwork (only EU and US for now)
  - Some custom background music, artwork and animations
@@ -72,3 +72,7 @@ Gamelist view : Double Box Carousel
 
 Gamelist view : RetroTiles :
 <img width="1920" height="1080" alt="169retrotiles" src="https://github.com/user-attachments/assets/a02595d5-e791-4f31-9c9a-d85836bc6853" />
+
+# COPYRIGHT INFO
+
+The Xbox 360 and PlayStation labels used in this project were made by "VictorPines" and use the CC BY-SA 4.0 license. 

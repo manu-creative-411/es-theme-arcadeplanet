@@ -452,7 +452,9 @@ originally based on: "carbon"
 		<image name="logo">
 			<linearSmooth>true</linearSmooth>
 			<path>./_art/Colorlogos/${system.theme}.png</path>
+			<path>./_art/Colorlogos/${system.theme}-${lang}.png</path>
 			<path>./_art/Colorlogos/${system.theme}.svg</path>
+			<path>./_art/Colorlogos/${system.theme}-${lang}.svg</path>
 			<path ifSubset="artworkregion:US">./_art/Colorlogos/US/${system.theme}.png</path>
 			<path ifSubset="artworkregion:US">./_art/Colorlogos/US/${system.theme}.svg</path>
 			<path ifSubset="neogeostyle:mvs">./_art/Colorlogos/special/${system.theme}.png</path>

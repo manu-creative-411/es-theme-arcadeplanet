@@ -15,7 +15,9 @@
     <image name="logo" ifSubset="logostyle:monochrome">
 	  <linearSmooth>true</linearSmooth>
 	  <path>./../wheelv/${system.theme}.png</path>
+	  <path>./../wheelv/${system.theme}-${lang}.png</path>
       <path>./../wheelv/${system.theme}.svg</path>
+      <path>./../wheelv/${system.theme}-${lang}.svg</path>
       <path ifSubset="artworkregion:US">./../wheelv/US/default.png</path>
 	  <path ifSubset="artworkregion:US">./../wheelv/US/${system.theme}.png</path>
       <path ifSubset="artworkregion:US">./../wheelv/US/${system.theme}.svg</path>

@@ -11,6 +11,7 @@
 		 <saturation>0.75</saturation>
 	     <linearSmooth>true</linearSmooth>
 	     <path>./../wheel/${system.theme}.png</path>
+	     <path>./../wheel/${system.theme}-${lang}.png</path>
 		 <path ifSubset="artworkregion:US">./../wheel/US/${system.theme}.png</path>
 		 <path ifSubset="neogeostyle:mvs">./../wheel/special/${system.theme}.png</path>
 	</image>
@@ -111,7 +112,9 @@
       <path>./../Colorlogos/${system.theme}.svg</path>
       <path ifSubset="artworkregion:US">./../Colorlogos/US/default.png</path>
 	  <path ifSubset="artworkregion:US">./../Colorlogos/US/${system.theme}.png</path>
+	  <path ifSubset="artworkregion:US">./../Colorlogos/US/${system.theme}-${lang}.png</path>
       <path ifSubset="artworkregion:US">./../Colorlogos/US/${system.theme}.svg</path>
+      <path ifSubset="artworkregion:US">./../Colorlogos/US/${system.theme}-${lang}.svg</path>
 	  <path ifSubset="neogeostyle:mvs">./../Colorlogos/special/${system.theme}.png</path>
 	  <linearSmooth>true</linearSmooth>
       <zIndex>21</zIndex>

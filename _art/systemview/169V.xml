@@ -15,6 +15,9 @@
 		 <color>8888A0ff</color>
 	     <linearSmooth>true</linearSmooth>
 	     <path>./../wheelv/${system.theme}.png</path>
+	     <path>./../wheelv/${system.theme}-${lang}.png</path>
+	     <path>./../wheelv/${system.theme}.svg</path>
+	     <path>./../wheelv/${system.theme}-${lang}.svg</path>
 		 <path ifSubset="artworkregion:US">./../wheelv/US/${system.theme}.png</path>
 		 <path ifSubset="neogeostyle:mvs">./../wheelv/special/${system.theme}.png</path>
 		  <storyboard event="activate">
@@ -64,7 +67,7 @@
 	<image name="bgv3" extra="static">
       <pos>0.2 0</pos>
 	  <pos ifSubset="randomart:marquee|thumbnail">0.1385416 0</pos>
-      <size>0.170833333 0.9537037</size>
+      <size>0.170833333 0.9611</size>
       <origin>0.5 0</origin>
       <path>./../backgrounds/169/BGV3.png</path>
       <zIndex>6</zIndex>
@@ -122,7 +125,9 @@
       <maxSize>0.334 0.2</maxSize>
 	  <path>./../Colorlogos/default.png</path>
 	  <path>./../Colorlogos/${system.theme}.png</path>
+	  <path>./../Colorlogos/${system.theme}-${lang}.png</path>
       <path>./../Colorlogos/${system.theme}.svg</path>
+      <path>./../Colorlogos/${system.theme}-${lang}.svg</path>
 	  <path ifSubset="artworkregion:US">./../Colorlogos/US/default.png</path>
 	  <path ifSubset="artworkregion:US">./../Colorlogos/US/${system.theme}.png</path>
       <path ifSubset="artworkregion:US">./../Colorlogos/US/${system.theme}.svg</path>
@@ -144,7 +149,9 @@
       <maxSize>0.334 0.2</maxSize>
 	  <path>./../Colorlogos/default.png</path>
 	  <path>./../Colorlogos/${system.theme}.png</path>
+	  <path>./../Colorlogos/${system.theme}-${lang}.png</path>
       <path>./../Colorlogos/${system.theme}.svg</path>
+      <path>./../Colorlogos/${system.theme}-${lang}.svg</path>
 	  <path ifSubset="artworkregion:US">./../Colorlogos/US/default.png</path>
 	  <path ifSubset="artworkregion:US">./../Colorlogos/US/${system.theme}.png</path>
       <path ifSubset="artworkregion:US">./../Colorlogos/US/${system.theme}.svg</path>
@@ -167,6 +174,7 @@
       <size>0.164 0</size>
 	  <path>./../controllers/default.png</path>
 	  <path>./../controllers/${system.theme}.png</path>
+	  <path>./../controllers/${system.theme}-${lang}.png</path>
 	  <path ifSubset="artworkregion:US">./../controllers/US/${system.theme}.png</path>
 	  <path ifSubset="neogeostyle:mvs">./../controllers/special/${system.theme}.png</path>
       <reflexion>0.0 0.0</reflexion>
@@ -220,8 +228,8 @@
 	</image>
 		
 	<text name="systemInfo">
-	  <fontPath>./../fonts/Bank Gothic Medium.otf</fontPath>
-	  <fontSize>0.028</fontSize>
+	  <fontPath>./../fonts/Orbitron-Bold.ttf</fontPath>
+	  <fontSize>0.025</fontSize>
 	  <forceUppercase>0</forceUppercase>
 	  <origin>0 0.5</origin>
 	  <alignment>left</alignment>
@@ -229,15 +237,15 @@
       <pos ifSubset="randomart:marquee|thumbnail">0.515 0.94</pos>
 	  <size>0.2 0.026</size>
       <backgroundColor>5522FF00</backgroundColor>
-      <color>bbbbbbdd</color>
-      <glowColor>00000000</glowColor>
-      <glowSize>0.1</glowSize>
+      <color>fefeffdd</color>
+      <glowColor>46485880</glowColor>
+      <glowSize>2</glowSize>
       <reflexion>0.0 0.0</reflexion>
     </text>
 	
 	<text name="hardwaretype" extra="static">
-	  <fontPath>./../fonts/Bank Gothic Medium.otf</fontPath>
-	  <fontSize>0.028</fontSize>
+	  <fontPath>./../fonts/Orbitron-Regular.ttf</fontPath>
+	  <fontSize>0.025</fontSize>
 	  <text>${system.hardwareType} ${system.releaseYearOrNull} |</text>
 	  <forceUppercase>0</forceUppercase>
 	  <origin>1 0.5</origin>
@@ -245,10 +253,9 @@
       <pos>0.62 0.94</pos>
       <pos ifSubset="randomart:marquee|thumbnail">0.51 0.94</pos>
 	  <size>1 0.27</size>
-      <color>bbbbbbdd</color>
-      <glowColor>00000000</glowColor>
-      <glowSize>0.1</glowSize>
-      <reflexion>0.0 0.0</reflexion>
+      <color>fefeffdd</color>
+      <glowColor>46485880</glowColor>
+      <glowSize>2</glowSize>      <reflexion>0.0 0.0</reflexion>
       <zIndex>40</zIndex>
 	</text>
 	

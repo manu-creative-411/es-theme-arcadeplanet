@@ -171,8 +171,8 @@
 
 		<image
 			name="md_hidden,ghosthidden,md_favorite, md_flag, md_manual, md_nomanual, md_cheevos, md_notcheevos, md_savestate, md_nosavestate, ghostfavorite, ghostcheevos, ghostsavestate, ghostmanual, md_kidgame, md_notkidgame">
-			<y>0.983</y>
-			<size>0.0158 0</size>
+			<y>0.953</y>
+			<size>0.013 0</size>
 		</image>
 
 		<image name="md_flag">
@@ -205,7 +205,7 @@
 		</image>
 
 		<text name="md_players">
-			<pos>0.57 0.982</pos>
+			<pos>0.57 0.953</pos>
 			<alignment>left</alignment>
 			<color>C8C8C8</color>
 			<origin>0 0.5</origin>
@@ -215,7 +215,7 @@
 		</text>
 
 		<text name="md_playcount">
-			<pos>0.87 0.982</pos>
+			<pos>0.87 0.953</pos>
 			<alignment>right</alignment>
 			<color>C8C8C8</color>
 			<origin>1 0.5</origin>
@@ -1050,9 +1050,13 @@
 			</storyboard>
 		</image>
 
-		<image name="bigtv,md_thumbnail,md_marquee">
+		<image name="bigtv, md_thumbnail, md_marquee">
 			<visible>false</visible>
 		</image>
+
+		<text name="md_description">
+			<visible>false</visible>
+		</text>
 
 		<imagegrid name="gamegrid">
 			<pos>0 0.086111</pos>
@@ -1131,21 +1135,90 @@
 			<zIndex>41</zIndex>
 		</text>
 
+		<image
+			name="md_players,md_playcount,md_rating,md_hidden,ghosthidden,md_favorite, md_flag, md_manual, md_nomanual, md_cheevos, md_notcheevos, md_savestate, md_nosavestate, ghostfavorite, ghostcheevos, ghostsavestate, ghostmanual, md_kidgame, md_notkidgame">
+			<y>0.943</y>
+			<size>0.0158 0</size>
+		</image>
+
+		<image name="md_hidden,ghosthidden">
+			<x>0.5075</x>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_flag">
+			<x>0.535</x>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_favorite,ghostfavorite">
+			<x>0.56</x>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_manual,md_nomanual,ghostmanual">
+			<x>0.585</x>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_cheevos,md_notcheevos,ghostcheevos">
+			<x>0.61</x>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_savestate,md_nosavestate,ghostsavestate">
+			<x>0.635</x>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_kidgame,md_notkidgame">
+			<x>0.66</x>
+			<scale>0.8</scale>
+			<linearSmooth>true</linearSmooth>
+		</image>
+
+		<text name="md_players">
+			<x>0.687</x>
+			<fontSize>0.0185</fontSize>
+			<size>0.02 0.025</size>
+
+			<alignment>left</alignment>
+			<origin>0 0.5</origin>
+		</text>
+
+		<text name="md_playcount">
+			<x>0.753</x>
+			<fontSize>0.0185</fontSize>
+
+			<alignment>left</alignment>
+			<origin>1 0.5</origin>
+		</text>
 		<rating name="md_rating">
-			<pos>0.904 0.042</pos>
-			<size>0.03 0.03</size>
-			<origin>0.5 0.5</origin>
-			<color>E0A020</color>
-			<unfilledColor>808080</unfilledColor>
-			<zIndex>41</zIndex>
+			<x>0.77</x>
+			<size>0.10 0.025</size>
+			<origin>0 0.5</origin>
+			<zIndex>50</zIndex>
 		</rating>
 
-		<text name="md_developer,md_genre,md_description">
-			<pos>2 2</pos>
+		<text name="md_developer">
+			<color>11FFFFFF</color>
+			<fontPath>./fonts/Orbitron-Bold.ttf</fontPath>
+			<pos>0.345 0.943</pos>
+			<size>0.28 0.03</size>
+			<alignment>left</alignment>
+			<origin>0.5 0.5</origin>
+			<fontSize>0.017</fontSize>
+			<glowColor>000000ff</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>41</zIndex>
 		</text>
 
 		<datetime name="md_releasedate">
-			<pos>2 2</pos>
+			<color>FFFFFFFF</color>
+			<fontPath>./fonts/Orbitron-SemiBold.ttf</fontPath>
+			<pos>0.185 0.943</pos>
+			<size>0.04 0.03</size>
+			<alignment>left</alignment>
+			<origin>0.5 0.5</origin>
+			<fontSize>0.017</fontSize>
+			<format>%Y</format>
+			<glowColor>000000ff</glowColor>
+			<glowSize>2</glowSize>
+			<zIndex>41</zIndex>
 		</datetime>
 
 	</view>
@@ -1163,7 +1236,7 @@
 			name="md_gridarrow_left, md_gridarrow_right, arrow_left, arrow_right, gridarrow_left, gridarrow_right">
 			<visible>false</visible>
 		</image>
-		<image name="bigtv, md_thumbnail, md_marquee">
+		<image name="bigtv, md_thumbnail, md_marquee, md_description">
 			<visible>false</visible>
 		</image>
 
@@ -1250,10 +1323,6 @@
 			<glowColor>000000ff</glowColor>
 			<glowSize>2</glowSize>
 			<zIndex>41</zIndex>
-
-			<marquee>true</marquee>
-			<marqueeSpeed>0.05</marqueeSpeed>
-			<marqueeDelay>1500</marqueeDelay>
 		</text>
 
 		<datetime name="md_releasedate">
@@ -1520,39 +1589,94 @@
 		</text>
 
 		<datetime name="md_releasedate">
-			<pos>0.504 0.274</pos>
+			<pos>0.515 0.30</pos>
 			<size>0.042 0.037</size>
 			<alignment>left</alignment>
 			<origin>0 0.5</origin>
 		</datetime>
 
 		<text name="md_developer">
-			<pos>0.540 0.274</pos>
+			<pos>0.56 0.30</pos>
 			<size>0.27604 0.03</size>
 			<origin>0 0.5</origin>
 		</text>
 
 		<text name="md_genre">
-			<pos>0.992 0.274</pos>
+			<pos>0.992 0.3</pos>
 			<color>928e94D0</color>
 			<origin>1 0.5</origin>
 			<alignment>right</alignment>
 			<size>0.401041666 0.03</size>
-			<fontPath>./fonts/SairaCondensed-Medium.ttf</fontPath>
-			<fontSize>0.028</fontSize>
+			<fontPath>./fonts/Orbitron-Bold.ttf</fontPath>
+			<fontSize>0.0175</fontSize>
 			<glowColor>00000016</glowColor>
 			<glowSize>2</glowSize>
 		</text>
 
+		<image
+			name="md_players,md_playcount,md_rating,md_hidden,ghosthidden,md_favorite, md_flag, md_manual, md_nomanual, md_cheevos, md_notcheevos, md_savestate, md_nosavestate, ghostfavorite, ghostcheevos, ghostsavestate, ghostmanual, md_kidgame, md_notkidgame">
+			<y>0.953</y>
+			<size>0.013 0</size>
+		</image>
+
+		<image name="md_hidden,ghosthidden">
+			<x>0.5075</x>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_flag">
+			<x>0.535</x>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_favorite,ghostfavorite">
+			<x>0.56</x>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_manual,md_nomanual,ghostmanual">
+			<x>0.585</x>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_cheevos,md_notcheevos,ghostcheevos">
+			<x>0.61</x>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_savestate,md_nosavestate,ghostsavestate">
+			<x>0.635</x>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_kidgame,md_notkidgame">
+			<x>0.66</x>
+			<scale>0.8</scale>
+			<linearSmooth>true</linearSmooth>
+		</image>
+
+		<text name="md_players">
+			<x>0.687</x>
+			<fontSize>0.0185</fontSize>
+			<size>0.02 0.025</size>
+
+			<alignment>left</alignment>
+			<origin>0 0.5</origin>
+		</text>
+
+		<text name="md_playcount">
+			<x>0.753</x>
+			<fontSize>0.0185</fontSize>
+
+			<alignment>left</alignment>
+			<origin>1 0.5</origin>
+		</text>
 		<rating name="md_rating">
-			<size>0.029</size>
-			<pos>0.22 0.025</pos>
+			<x>0.82</x>
+			<size>0.10 0.025</size>
+			<origin>0 0.5</origin>
+			<zIndex>50</zIndex>
 		</rating>
 
 		<text name="md_description">
+			<visible>true</visible>
 			<origin>0.5 0.5</origin>
-			<pos>0.748958 0.151</pos>
-			<size>0.492 0.198</size>
+			<pos>0.75 0.177</pos>
+			<size>0.484 0.198</size>
 			<lineSpacing>1.116</lineSpacing>
 			<alignment>center</alignment>
 		</text>
@@ -1706,12 +1830,67 @@
 			<visible>false</visible>
 		</text>
 
+		<image
+			name="md_players,md_playcount,md_rating,md_hidden,ghosthidden,md_favorite, md_flag, md_manual, md_nomanual, md_cheevos, md_notcheevos, md_savestate, md_nosavestate, ghostfavorite, ghostcheevos, ghostsavestate, ghostmanual, md_kidgame, md_notkidgame">
+			<y>0.951</y>
+			<size>0.013 0</size>
+		</image>
+
+		<image name="md_hidden,ghosthidden">
+			<x>0.5075</x>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_flag">
+			<x>0.535</x>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_favorite,ghostfavorite">
+			<x>0.56</x>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_manual,md_nomanual,ghostmanual">
+			<x>0.585</x>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_cheevos,md_notcheevos,ghostcheevos">
+			<x>0.61</x>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_savestate,md_nosavestate,ghostsavestate">
+			<x>0.635</x>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_kidgame,md_notkidgame">
+			<x>0.66</x>
+			<scale>0.8</scale>
+			<linearSmooth>true</linearSmooth>
+		</image>
+
+		<text name="md_players">
+			<x>0.687</x>
+			<fontSize>0.0185</fontSize>
+			<size>0.02 0.025</size>
+
+			<alignment>left</alignment>
+			<origin>0 0.5</origin>
+		</text>
+
+		<text name="md_playcount">
+			<x>0.753</x>
+			<fontSize>0.0185</fontSize>
+
+			<alignment>left</alignment>
+			<origin>1 0.5</origin>
+		</text>
 		<rating name="md_rating">
-			<size>0.029</size>
-			<pos>0.924 0.404</pos>
+			<x>0.82</x>
+			<size>0.10 0.025</size>
+			<origin>0 0.5</origin>
+			<zIndex>50</zIndex>
 		</rating>
 
 		<text name="md_description">
+			<visible>true</visible>
 			<origin>0 0</origin>
 			<pos>0.44166667 0.155</pos>
 			<size>0.414 0.226</size>
@@ -1738,6 +1917,7 @@
 			<path>./backgrounds/169/bgneoboxes.png</path>
 			<zIndex>3</zIndex>
 		</image>
+
 
 		<imagegrid name="gamegrid">
 			<pos>0.333333 0</pos>
@@ -1805,7 +1985,64 @@
 			<animateColor>FFFFFFff</animateColor>
 			<animateColorTime>350</animateColorTime>
 		</ninepatch>
+		<image
+			name="md_players,md_playcount,md_rating,md_hidden,ghosthidden,md_favorite, md_flag, md_manual, md_nomanual, md_cheevos, md_notcheevos, md_savestate, md_nosavestate, ghostfavorite, ghostcheevos, ghostsavestate, ghostmanual, md_kidgame, md_notkidgame">
+			<y>0.953</y>
+			<size>0.013 0</size>
+		</image>
 
+		<image name="md_hidden,ghosthidden">
+			<x>0.5075</x>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_flag">
+			<x>0.535</x>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_favorite,ghostfavorite">
+			<x>0.56</x>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_manual,md_nomanual,ghostmanual">
+			<x>0.585</x>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_cheevos,md_notcheevos,ghostcheevos">
+			<x>0.61</x>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_savestate,md_nosavestate,ghostsavestate">
+			<x>0.635</x>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_kidgame,md_notkidgame">
+			<x>0.66</x>
+			<scale>0.8</scale>
+			<linearSmooth>true</linearSmooth>
+		</image>
+
+		<text name="md_players">
+			<x>0.687</x>
+			<fontSize>0.0185</fontSize>
+			<size>0.02 0.025</size>
+
+			<alignment>left</alignment>
+			<origin>0 0.5</origin>
+		</text>
+
+		<text name="md_playcount">
+			<x>0.753</x>
+			<fontSize>0.0185</fontSize>
+
+			<alignment>left</alignment>
+			<origin>1 0.5</origin>
+		</text>
+		<rating name="md_rating">
+			<x>0.82</x>
+			<size>0.10 0.025</size>
+			<origin>0 0.5</origin>
+			<zIndex>50</zIndex>
+		</rating>
 	</customView>
 
 	<!-- NEO LOGOS -->
@@ -1872,6 +2109,33 @@
 			<animateColor>88888855</animateColor>
 			<animateColorTime>500</animateColorTime>
 		</ninepatch>
+		<image
+			name="md_players,md_playcount,md_rating,md_hidden,ghosthidden,md_favorite, md_flag, md_manual, md_nomanual, md_cheevos, md_notcheevos, md_savestate, md_nosavestate, ghostfavorite, ghostcheevos, ghostsavestate, ghostmanual, md_kidgame, md_notkidgame">
+			<y>0.953</y>
+			<size>0.013 0</size>
+		</image>
+		<text name="md_players">
+			<x>0.687</x>
+			<fontSize>0.0185</fontSize>
+			<size>0.02 0.025</size>
+
+			<alignment>left</alignment>
+			<origin>0 0.5</origin>
+		</text>
+
+		<text name="md_playcount">
+			<x>0.753</x>
+			<fontSize>0.0185</fontSize>
+
+			<alignment>left</alignment>
+			<origin>1 0.5</origin>
+		</text>
+		<rating name="md_rating">
+			<x>0.82</x>
+			<size>0.10 0.025</size>
+			<origin>0 0.5</origin>
+			<zIndex>50</zIndex>
+		</rating>
 
 	</customView>
 
@@ -1957,6 +2221,7 @@
 		</text>
 
 		<text name="md_description">
+			<visible>true</visible>
 			<origin>0 0</origin>
 			<pos>0.005 0.578</pos>
 			<size>0.324 0.26</size>
@@ -2027,6 +2292,7 @@
 		</text>
 
 		<text name="md_description">
+			<visible>true</visible>
 			<pos>0.138020833 0.659</pos>
 			<size>0.274 0.356</size>
 			<alignment>center</alignment>
@@ -2035,7 +2301,7 @@
 		<imagegrid name="gamegrid">
 			<padding>0 0.08 0 0</padding>
 			<pos>0.2760416 0.00</pos>
-			<size>0.72395 0.938</size>
+			<size>0.72395 0.91</size>
 			<scrollDirection>vertical</scrollDirection>
 			<autoLayout>4 3</autoLayout>
 			<autoLayoutSelectedZoom>1</autoLayoutSelectedZoom>

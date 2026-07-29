@@ -1020,7 +1020,7 @@
 	<view name="grid">
 
 		<image name="background">
-			<path>./backgrounds/169/bggrid.jpg</path>
+			<path>./backgrounds/169/bggrid.png</path>
 		</image>
 
 		<video name="md_video">
@@ -1059,21 +1059,21 @@
 		</text>
 
 		<imagegrid name="gamegrid">
-			<pos>0 0.086111</pos>
-			<size>1 0.8287037</size>
-			<margin>0.024 0.024</margin>
-			<padding>0.024 0.024 0.024 0.024</padding>
+			<pos>0.010 0.083</pos>
+			<size>0.985 0.836</size>
+			<margin>0.0 0.0</margin>
+			<padding>0.01 0.04 0.01 0.04</padding>
 			<zIndex>10</zIndex>
 			<autoLayout>6 2</autoLayout>
 			<autoLayout
-				if="{system.name} == 'gb' || {system.name} == 'gb2players' || {system.name} == 'gbc' || {system.name} == 'gbc2players' || {system.name} == 'gba' || {system.name} == 'gba2players' || {system.name} == '3ds' || {system.name} == 'amigacd32' || {system.name} == 'amigacdtv' || {system.name} == 'cdi' || {system.name} == 'dreamcast' || {system.name} == 'fds' || {system.name} == 'nds' || {system.name} == 'neogeocd' || {system.name} == 'ngp' || {system.name} == 'ngpc' || {system.name} == 'pce-cd' || {system.name} == 'pcfx' || {system.name} == 'pokemini' || {system.name} == 'psx' || {system.name} == 'sgb'">6
-				3</autoLayout>
+				if="{system.name} == 'pokemini' || {system.name} == 'gb' || {system.name} == 'gb2players' || {system.name} == 'gbc' || {system.name} == 'gbc2players' || {system.name} == 'gba' || {system.name} == 'gba2players' || {system.name} == '3ds' || {system.name} == 'amigacd32' || {system.name} == 'amigacdtv' || {system.name} == 'cdi' || {system.name} == 'dreamcast' || {system.name} == 'fds' || {system.name} == 'nds' || {system.name} == 'neogeocd' || {system.name} == 'ngp' || {system.name} == 'ngpc' || {system.name} == 'pce-cd' || {system.name} == 'pcfx' || {system.name} == 'pokemini' || {system.name} == 'psx' || {system.name} == 'sgb'">
+				6 2</autoLayout>
 			<autoLayout
-				if="{system.name} == '3do' || {system.name} == 'sfc' || {system.name} == 'satellaview'">7
-				2</autoLayout>
+				if="{system.name} == '3do' || {system.name} == 'sfc' || {system.name} == 'satellaview'">
+				7 2</autoLayout>
 			<autoLayout
-				if="{system.name} == 'snes' || {system.name} == 'snesh' || {system.name} == 'n64' || {system.name} == 'gameandwatch' || {system.name} == 'virtualboy' || {system.name} == 'gx4000' || {system.name} == 'supergrafx' || {system.name} == 'scv' || {system.name} == 'lcdgames'">4
-				2</autoLayout>
+				if="{system.name} == 'snes' || {system.name} == 'snesh' || {system.name} == 'n64' || {system.name} == 'gameandwatch' || {system.name} == 'virtualboy' || {system.name} == 'gx4000' || {system.name} == 'supergrafx' || {system.name} == 'scv' || {system.name} == 'lcdgames'">
+				4 3</autoLayout>
 			<autoLayoutSelectedZoom>1.1</autoLayoutSelectedZoom>
 			<animateSelection>false</animateSelection>
 			<centerSelection>false</centerSelection>
@@ -1092,12 +1092,12 @@
 			<backgroundCornerSize>9 9</backgroundCornerSize>
 			<selectionMode>image</selectionMode>
 			<padding>6 6</padding>
-			<imageColor>999999FF</imageColor>
+			<imageColor>AAAAAAFF</imageColor>
 		</gridtile>
 
 		<gridtile name="selected">
 			<backgroundCenterColor>00000000</backgroundCenterColor>
-			<backgroundEdgeColor>BB0000FF</backgroundEdgeColor>
+			<backgroundEdgeColor>00FFFFFF</backgroundEdgeColor>
 			<padding>6 6</padding>
 			<imageColor>FFFFFFFF</imageColor>
 		</gridtile>
@@ -1114,11 +1114,11 @@
 
 		<image name="gridtile.favorite:selected">
 			<linearSmooth>true</linearSmooth>
-			<color>FFFF00D0</color>
+			<color>#480B72FF</color>
 		</image>
 
 		<ninepatch name="gridtile.background:selected">
-			<animateColor>BBBB00B0</animateColor>
+			<animateColor>00FFFFB0</animateColor>
 			<animateColorTime>350</animateColorTime>
 		</ninepatch>
 
@@ -1373,7 +1373,26 @@
 			<linearSmooth>true</linearSmooth>
 			<zIndex>50</zIndex>
 		</image>
-
+		<image name="Controller" extra="true">
+			<visible>true</visible>
+			<color>E8E8E8</color>
+			<pos>0.91 0.136</pos>
+			<origin>0.5 0.5</origin>
+			<size>0.1375 0</size>
+			<path>./controllers/default.png</path>
+			<path>./controllers/${system.name}.png</path>
+			<path ifSubset="artworkregion:US">./controllers/default.png</path>
+			<path ifSubset="artworkregion:US">./controllers/${system.name}.png</path>
+			<path ifSubset="artworkregion:US">./controllers/US/${system.name}.png</path>
+			<path ifSubset="neogeostyle:mvs">./controllers/special/${system.name}.png</path>
+			<storyboard>
+				<animation property="offsetX" from="0.2" to="0.2" begin="" duration="1000"
+					mode="Linear" />
+				<animation property="offsetX" from="0.2" to="0" begin="1000" duration="250"
+					mode="Linear" />
+			</storyboard>
+			<zIndex>101</zIndex>
+		</image>
 		<image
 			name="md_players,md_playcount,md_rating,md_hidden,ghosthidden,md_favorite, md_flag, md_manual, md_nomanual, md_cheevos, md_notcheevos, md_savestate, md_nosavestate, ghostfavorite, ghostcheevos, ghostsavestate, ghostmanual, md_kidgame, md_notkidgame">
 			<y>0.943</y>

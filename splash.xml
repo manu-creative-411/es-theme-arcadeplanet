@@ -61,6 +61,9 @@
 		<text lang="fr" name="Loading" extra="true">
 			<text>CHARGEMENT</text>			
 		</text>
+		<text lang="es" name="Loading" extra="true">
+			<text>CARGANDO...</text>			
+		</text>
 		
 		<text name="Warning" extra="true">
 			<pos>0.01 0.95</pos>
@@ -85,8 +88,8 @@
 		</text>
 			
 		<image name="progressbar">
-			<origin>0 0.5</origin>
-			<pos>0.24 0.8</pos>
+			<origin>0.5 0.5</origin> <!-- Origen en el centro del elemento -->
+			<pos>0.5 0.8</pos>       <!-- Posición centrada horizontalmente -->
 			<size>0.25 0.03</size>
 			<color>800000</color>
 			<colorEnd>000000</colorEnd>
